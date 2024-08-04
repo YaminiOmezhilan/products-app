@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../redux/store";
 import { fetchProducts, selectProducts } from "../redux/productsSlice";
-import { Container, Typography, CircularProgress, Box } from "@mui/material";
+import { CircularProgress, Box } from "@mui/material";
 import ProductTable from "../components/ProductTable";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
