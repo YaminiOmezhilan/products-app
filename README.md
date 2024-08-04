@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Products App 🌟
+Welcome to the Products App, a sleek React application designed to provide users with a comprehensive interface for viewing product details and customer reviews.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌐 Deployed URL
+You can access the live application [here](https://products-app-sigma.vercel.app/).
 
-## Available Scripts
 
-In the project directory, you can run:
+### Prerequisites
+To get started, ensure you have the following installed:
 
-### `npm start`
+- [Node.js](https://nodejs.org/) (version 12 or higher)
+- [npm](https://www.npmjs.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Clone the Repository
+To clone the repository, run the following commands in your terminal:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+git clone https://github.com/YaminiOmezhilan/appliance-dashboard.git
+cd appliance-dashboard
+```
 
-### `npm test`
+### 📦 Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Install the necessary dependencies by executing:
+  ```npm install```.
 
-### `npm run build`
+#### 🚀 Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.To run the development server, simply use:
+  ```npm start```
+2. For production, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+# run to get optimized production build
+  npm run build
+# install server package globally to serve static page
+  npm install -g serve
+# start the production server
+  serve -s build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🌟 App Tour
+1. Login Page: Upon launching the app, users will be greeted with a login page. Use the following credentials to log in:
 
-### `npm run eject`
+   ```
+     username: emilys
+     password: emilyspass
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Product List: After a successful login, users will have access to a beautifully organized list of products. Each product will display essential details along with a button to view customer reviews.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🛍️ Features
+- User-friendly interface for easy navigation 🌈
+- Detailed product information 📝
+- Customer reviews to aid purchase decisions ⭐
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🎉 Get Started!
+Dive in and explore the [Products App](https://products-app-sigma.vercel.app/)! We hope you enjoy the experience and find the product information helpful.
