@@ -26,7 +26,7 @@ cd appliance-dashboard
 
 #### 🚀 Usage
 
-1.To run the development server, simply use:
+1. To run the development server, simply use:
   ```npm start```
 2. For production, follow these steps:
 
