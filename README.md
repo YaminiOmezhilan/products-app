@@ -15,8 +15,8 @@ To get started, ensure you have the following installed:
 To clone the repository, run the following commands in your terminal:
 
 ```sh
-git clone https://github.com/YaminiOmezhilan/appliance-dashboard.git
-cd appliance-dashboard
+git clone https://github.com/YaminiOmezhilan/products-app.git
+cd products-app
 ```
 
 ### 📦 Installation
