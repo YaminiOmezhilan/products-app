@@ -12,7 +12,6 @@ import {
 import styled from "@emotion/styled";
 import ReviewModal from "./ReviewModal";
 
-// Define the types for product props
 interface Product {
   id: number;
   title: string;
@@ -118,7 +117,7 @@ const ProductTable: React.FC<ProductTableProps> = ({ products }) => {
                 <CustomButton
                   variant="contained"
                   onClick={() => handleOpenModal(product)}
-                  sx={{ textTransform: "none" }} // Prevent uppercase transformation
+                  sx={{ textTransform: "none" }} 
                 >
                   View Reviews
                 </CustomButton>

@@ -15,7 +15,6 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import axios from "axios";
 
-// Define the types for review props
 interface Review {
   id: number;
   rating: number;
@@ -89,7 +88,6 @@ const ReviewModal: React.FC<ReviewModalProps> = ({
     <Dialog
       open={open}
       onClose={(event, reason) => {
-        // Only close the modal if the close button is clicked
         if (reason !== "backdropClick") {
           onClose();
         }
@@ -99,7 +97,6 @@ const ReviewModal: React.FC<ReviewModalProps> = ({
       sx={{ margin: "auto", maxHeight: "80vh", maxWidth: "60vw" }}
     >
       {loading ? (
-        // Show loading spinner for the entire dialog
         <Box
           display="flex"
           justifyContent="center"
@@ -149,10 +146,9 @@ const ReviewModal: React.FC<ReviewModalProps> = ({
           </DialogTitle>
           <DialogContent
             dividers={true}
-            sx={{ maxHeight: "60vh", overflow: "hidden" }} // Hide overflow for content
+            sx={{ maxHeight: "60vh", overflow: "hidden" }}
           >
             <Box sx={{ maxHeight: "40vh", overflowY: "auto" }}>
-              {/* Add scrollable area for reviews */}
               <List>
                 {reviews.map((review) => (
                   <Box

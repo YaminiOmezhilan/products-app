@@ -1,10 +1,7 @@
-// src/redux/productsSlice.ts
-
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { RootState } from "./store";
 
-// Define the shape of the state
 interface Product {
   id: number;
   title: string;
@@ -19,20 +16,17 @@ interface ProductsState {
   error: string | null;
 }
 
-// Initial state
 const initialState: ProductsState = {
   products: [],
   loading: false,
   error: null,
 };
 
-// Async thunk for fetching products
 export const fetchProducts = createAsyncThunk("products/fetch", async () => {
   const response = await axios.get("https://dummyjson.com/products");
   return response.data.products;
 });
 
-// Slice
 const productsSlice = createSlice({
   name: "products",
   initialState,
@@ -54,7 +48,6 @@ const productsSlice = createSlice({
   },
 });
 
-// Selector to access products state
 export const selectProducts = (state: RootState) => state.products.products;
 
 export default productsSlice.reducer;

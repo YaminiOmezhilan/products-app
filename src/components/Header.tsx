@@ -21,13 +21,13 @@ const Header: React.FC = () => {
 
   const AppBar = styled(MuiAppBar)`
     background-color: #fff;
-    position: fixed; // Fixed position for the header
+    position: fixed;
     top: 0;
-    left: 10%; // Offset for the sidebar
+    left: 10%;
     right: 0;
-    z-index: 1200; // Ensure it is above other content
-    width: 90%; // Take the remaining width
-    box-shadow: none; // Remove the default box shadow
+    z-index: 1200;
+    width: 90%;
+    box-shadow: none;
   `;
 
   const CustomButton = styled(Button)`

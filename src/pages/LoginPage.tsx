@@ -50,14 +50,10 @@ const LoginPage: React.FC = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      // Dispatch the login action
       const result = await dispatch(loginUser(data));
-      // Check if the login was successful
       if (result.meta.requestStatus === "fulfilled") {
-        // Redirect to the products page
         navigate("/products");
       } else {
-        // Show error message if login failed
         setErrorMessage("Invalid username or password");
       }
     } catch (error) {
@@ -134,23 +130,23 @@ const LoginPage: React.FC = () => {
               mb: 2,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#cfd4d8", // Default border color
+                  borderColor: "#cfd4d8", 
                   borderWidth: "1px",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#cfd4d8", // Border color on hover
+                  borderColor: "#cfd4d8", 
                   borderWidth: "1px",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#cfd4d8", // Border color when focused
+                  borderColor: "#cfd4d8", 
                   borderWidth: "1px",
                 },
               },
               "& .MuiInputLabel-root": {
-                color: "#2D3540", // Label color
+                color: "#2D3540", 
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "#2D3540", // Label color when focused
+                color: "#2D3540", 
               },
             }}
           />
@@ -167,23 +163,23 @@ const LoginPage: React.FC = () => {
               mb: 2,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#cfd4d8", // Default border color
+                  borderColor: "#cfd4d8",
                   borderWidth: "1px",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#cfd4d8", // Border color on hover
+                  borderColor: "#cfd4d8", 
                   borderWidth: "1px",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#cfd4d8", // Border color when focused
+                  borderColor: "#cfd4d8", 
                   borderWidth: "1px",
                 },
               },
               "& .MuiInputLabel-root": {
-                color: "#2D3540", // Label color
+                color: "#2D3540", 
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "#2D3540", // Label color when focused
+                color: "#2D3540", 
               },
             }}
             InputProps={{
