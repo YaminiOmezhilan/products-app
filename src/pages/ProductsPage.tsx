@@ -5,15 +5,7 @@ import { CircularProgress, Box } from "@mui/material";
 import ProductTable from "../components/ProductTable";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
-import styled from "@emotion/styled";
-
-const StatusContainer = styled(Box)`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  margin-top: 64px;
-`;
+import { StatusContainer } from "../styles/styles";
 
 const ProductsPage: React.FC = () => {
   const dispatch = useAppDispatch();

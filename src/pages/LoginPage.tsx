@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import {
   TextField,
-  Button,
   Typography,
   Paper,
   Box,
@@ -15,8 +14,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../redux/authSlice";
 import { useAppDispatch } from "../redux/store";
-import styled from "@emotion/styled";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { CustomLoginButton as CustomButton } from "../styles/styles";
 
 // Define the validation schema using zod
 const schema = z.object({
@@ -62,31 +61,6 @@ const LoginPage: React.FC = () => {
     }
   };
 
-  const CustomButton = styled(Button)`
-    text-transform: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 8px 10px;
-    margin-top: 10px;
-    line-height: 1.5;
-    border: none;
-    border-radius: 6px;
-    background-color: #cfd4d8;
-    border-color: #d9d9d9;
-    color: #2d3540;
-
-    &:hover {
-      background-color: #b8bdc0;
-      border-color: #dde3e7;
-      color: #000;
-    }
-
-    &:active {
-      border-color: #1c4b8e;
-      color: #000;
-    }
-  `;
-
   return (
     <Box
       sx={{
@@ -130,23 +104,23 @@ const LoginPage: React.FC = () => {
               mb: 2,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#cfd4d8", 
+                  borderColor: "#cfd4d8",
                   borderWidth: "1px",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#cfd4d8", 
+                  borderColor: "#cfd4d8",
                   borderWidth: "1px",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#cfd4d8", 
+                  borderColor: "#cfd4d8",
                   borderWidth: "1px",
                 },
               },
               "& .MuiInputLabel-root": {
-                color: "#2D3540", 
+                color: "#2D3540",
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "#2D3540", 
+                color: "#2D3540",
               },
             }}
           />
@@ -167,19 +141,19 @@ const LoginPage: React.FC = () => {
                   borderWidth: "1px",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#cfd4d8", 
+                  borderColor: "#cfd4d8",
                   borderWidth: "1px",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#cfd4d8", 
+                  borderColor: "#cfd4d8",
                   borderWidth: "1px",
                 },
               },
               "& .MuiInputLabel-root": {
-                color: "#2D3540", 
+                color: "#2D3540",
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "#2D3540", 
+                color: "#2D3540",
               },
             }}
             InputProps={{
